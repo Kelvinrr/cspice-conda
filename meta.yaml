@@ -1,0 +1,10 @@
+package:
+  name: cspice
+  version: 66
+
+source:
+  git_rev:
+  git_url: https://github.com/Kelvinrr/cspice.git
+
+about:
+  home: https://naif.jpl.nasa.gov/naif/toolkit.html
