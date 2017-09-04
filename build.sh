@@ -7,8 +7,9 @@ make
 
 echo $PREFIX
 
-if [[ "$unamestr" == 'Linux' ]]; then
-   cp -P ../lib/libcspice.a $PREFIX/lib/
+if [[ `uname` == 'Linux' ]]; then
+    mkdir -p $PREFIX/lib
+    cp ../lib/libcspice.a $PREFIX/lib/libcspice.a
 else
    ditto ../lib/libcspice.a $PREFIX/lib/
 fi
